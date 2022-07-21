@@ -42,8 +42,5 @@ public class SpringBootSendEmailApplication implements CommandLineRunner {
 		helper.setText("<h1>Check attachment for image!</h1>", true);
 		helper.addAttachment("my_photo.png", new ClassPathResource("android.png"));
 		javaMailSender.send(msg);
-
 	}
-
-
 }
