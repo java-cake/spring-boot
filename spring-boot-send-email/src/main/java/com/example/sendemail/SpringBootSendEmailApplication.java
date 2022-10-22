@@ -29,7 +29,7 @@ public class SpringBootSendEmailApplication implements CommandLineRunner {
 	}
 	void sendEmail() {
 		SimpleMailMessage msg = new SimpleMailMessage();
-		msg.setTo("hauntps@gmail.com", "ngocnt@gmail.com");
+		msg.setTo("sourceemail@gmail.com", "destinationemail@gmail.com");
 		msg.setSubject("Testing from Spring Boot");
 		msg.setText("Hello World \n Spring Boot Email");
 		javaMailSender.send(msg);
